@@ -1,0 +1,75 @@
+{
+ "id": "rmuqfw9moe3574d",
+ "reference": "LA-0711",
+ "request": "A man needs his insulin pens and a replacement rescue inhaler after the fire destroyed his home.",
+ "mode": "buy",
+ "capCents": 12000,
+ "reserveCents": 1200,
+ "spendableCents": 10800,
+ "delivery": {
+  "line1": "Example Relief Office, 100 Example Way",
+  "city": "Pasadena",
+  "state": "CA",
+  "postal": "91101"
+ },
+ "instructions": "",
+ "allergies": null,
+ "status": "NOTHING_BOUGHT",
+ "createdAt": "2026-10-02T04:05:00.480Z",
+ "updatedAt": "2026-10-02T04:05:00.480Z",
+ "needs": [
+  {
+   "id": "rx",
+   "label": "Prescription medicine",
+   "qty": 1,
+   "notes": "",
+   "status": "declined",
+   "reason": "This is a medicine that needs a prescriber or pharmacist. This agent cannot buy it, and catalogue results for it include products sold for animals.",
+   "nextStep": "Ask a pharmacist about an emergency refill, or contact the prescriber. Disaster relief hotlines can also help."
+  }
+ ],
+ "lines": [],
+ "events": [
+  {
+   "t": "2026-10-02T04:05:00.480Z",
+   "kind": "queued",
+   "text": "Request received for household LA-0711. Budget $120.00, $12.00 held back."
+  },
+  {
+   "t": "2026-10-02T04:05:00.480Z",
+   "kind": "model",
+   "text": "Language model unavailable (ThrottlingException) after 0 turns. Finishing with fixed rules."
+  },
+  {
+   "t": "2026-10-02T04:05:00.480Z",
+   "kind": "need",
+   "text": "Rule-based mode recognised 1 item in the request."
+  },
+  {
+   "t": "2026-10-02T04:05:00.480Z",
+   "kind": "decline",
+   "text": "Declined \"Prescription medicine\": This is a medicine that needs a prescriber or pharmacist. This agent cannot buy it, and catalogue results for it include products sold for animals.",
+   "needId": "rx"
+  },
+  {
+   "t": "2026-10-02T04:05:00.480Z",
+   "kind": "done",
+   "text": "Nothing was bought: every need was declined."
+  }
+ ],
+ "model": {
+  "source": "rules",
+  "turns": 0,
+  "notes": [
+   "The language model became unavailable after 0 turns (ThrottlingException). The system finished the request with fixed rules."
+  ],
+  "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+ },
+ "cart": null,
+ "order": null,
+ "summary": "Nothing was found that could be bought. Not bought: Prescription medicine.",
+ "submitted": true,
+ "authorisedAt": "2026-10-02T04:05:00.480Z",
+ "summarySource": "system",
+ "committedCents": 0
+}

@@ -1,0 +1,178 @@
+{
+ "id": "rmuqfw2q7b75e45",
+ "reference": "LA-0610",
+ "request": "A mother with a seven-month-old lost her car and her home in the fire. She needs infant formula powder (two cans), size 3 diapers, and a pack of baby wipes.",
+ "mode": "hold",
+ "capCents": 30000,
+ "reserveCents": 3000,
+ "spendableCents": 27000,
+ "delivery": {
+  "line1": "Example Relief Office, 100 Example Way",
+  "city": "Pasadena",
+  "state": "CA",
+  "postal": "91101"
+ },
+ "instructions": "",
+ "allergies": "None known",
+ "status": "AWAITING_APPROVAL",
+ "createdAt": "2026-10-02T04:04:51.535Z",
+ "updatedAt": "2026-10-02T04:05:00.479Z",
+ "needs": [
+  {
+   "id": "formula",
+   "label": "Infant formula",
+   "qty": 1,
+   "notes": "",
+   "status": "filled",
+   "reason": "",
+   "nextStep": ""
+  },
+  {
+   "id": "diapers",
+   "label": "Diapers",
+   "qty": 3,
+   "notes": "",
+   "status": "declined",
+   "reason": "No search result passed the checks for wording, stock and seller.",
+   "nextStep": "Try a more specific description, or buy this item another way."
+  },
+  {
+   "id": "wipes",
+   "label": "Baby wipes",
+   "qty": 1,
+   "notes": "",
+   "status": "filled",
+   "reason": "",
+   "nextStep": ""
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1-ort",
+   "needId": "formula",
+   "productId": "IfgyLxt",
+   "variantId": "IfgyLxt@dollargeneral.com",
+   "name": "Similac Sensitive Infant Formula Powder",
+   "brand": "Similac/Abbott",
+   "domain": "dollargeneral.com",
+   "qty": 1,
+   "unitCents": 2395,
+   "lineCents": 2395,
+   "image": "https://cdn.trychannel3.com/c9292951-3c58-4fb4-a943-e26616a7ff43?aid=01M3XCJP46PQTZQXRE99Z4BSPP&mid=AYbp",
+   "alt": "Front view of a Similac Sensitive Infant Formula powder can with orange and blue label.",
+   "url": "https://buy.trychannel3.com/IfgyLxt-AYbp-S666bu?o=01M2JS34QMJSG95X7MDQSVJH3R&aid=01M3XCJP46PQTZQXRE99Z4BSPP",
+   "why": "Cheapest result that mentions the required wording (rule-based mode).",
+   "substitution": null,
+   "requirements": [
+    "formula"
+   ]
+  },
+  {
+   "id": "L2-r40",
+   "needId": "wipes",
+   "productId": "rCVsDzX",
+   "variantId": "rCVsDzX@babylist.com",
+   "name": "Nose and Face Wipes",
+   "brand": "Dr. Brown's",
+   "domain": "babylist.com",
+   "qty": 1,
+   "unitCents": 1094,
+   "lineCents": 1094,
+   "image": "https://cdn.trychannel3.com/911259b4-1469-404c-a6c1-5bde00a5cf7b?aid=01M3XCJTQ5DDXBMB4KS02Y9DAW&mid=s0yC",
+   "alt": "Two packs of Dr. Brown's Nose and Face Wipes packaging shown side by side.",
+   "url": "https://buy.trychannel3.com/rCVsDzX-s0yC-S666bu?o=01KCVCJCYQSXGMP6SWNS5SMCHP&aid=01M3XCJTQ5DDXBMB4KS02Y9DAW",
+   "why": "Cheapest result that mentions the required wording (rule-based mode).",
+   "substitution": null,
+   "requirements": [
+    "wipes"
+   ]
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-10-02T04:04:51.535Z",
+   "kind": "queued",
+   "text": "Request received for household LA-0610. Budget $300.00, $30.00 held back."
+  },
+  {
+   "t": "2026-10-02T04:04:51.535Z",
+   "kind": "model",
+   "text": "Language model unavailable (ThrottlingException) after 0 turns. Finishing with fixed rules."
+  },
+  {
+   "t": "2026-10-02T04:04:51.535Z",
+   "kind": "need",
+   "text": "Rule-based mode recognised 3 items in the request."
+  },
+  {
+   "t": "2026-10-02T04:04:54.332Z",
+   "kind": "search",
+   "text": "Searched Channel3 for \"infant formula powder\": 8 results, 8 usable.",
+   "needId": "formula"
+  },
+  {
+   "t": "2026-10-02T04:04:54.723Z",
+   "kind": "cart",
+   "text": "Added 1 x Similac Sensitive Infant Formula Powder from dollargeneral.com at $23.95 each ($23.95). $246.05 left.",
+   "needId": "formula",
+   "lineId": "L1-ort"
+  },
+  {
+   "t": "2026-10-02T04:04:56.877Z",
+   "kind": "search",
+   "text": "Searched Channel3 for \"baby diapers size 4 pack size 3\": 5 results, 0 usable.",
+   "needId": "diapers"
+  },
+  {
+   "t": "2026-10-02T04:04:56.877Z",
+   "kind": "decline",
+   "text": "Declined \"Diapers\": No search result passed the checks for wording, stock and seller.",
+   "needId": "diapers"
+  },
+  {
+   "t": "2026-10-02T04:04:59.015Z",
+   "kind": "search",
+   "text": "Searched Channel3 for \"unscented baby wipes pack\": 5 results, 4 usable.",
+   "needId": "wipes"
+  },
+  {
+   "t": "2026-10-02T04:04:59.389Z",
+   "kind": "cart",
+   "text": "Added 1 x Nose and Face Wipes from babylist.com at $10.94 each ($10.94). $235.11 left.",
+   "needId": "wipes",
+   "lineId": "L2-r40"
+  },
+  {
+   "t": "2026-10-02T04:05:00.479Z",
+   "kind": "cartapi",
+   "text": "Cart CART-MUQFW8SE0AE231 is valid at $34.89. PayPal order 7UR30506RG310193E created."
+  },
+  {
+   "t": "2026-10-02T04:05:00.479Z",
+   "kind": "done",
+   "text": "Held for the caseworker's approval. Nothing has been charged."
+  }
+ ],
+ "model": {
+  "source": "rules",
+  "turns": 0,
+  "notes": [
+   "The language model became unavailable after 0 turns (ThrottlingException). The system finished the request with fixed rules."
+  ],
+  "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+ },
+ "cart": {
+  "id": "CART-MUQFW8SE0AE231",
+  "status": "CREATED",
+  "validation_status": "VALID",
+  "issues": [],
+  "paypalOrderId": "7UR30506RG310193E",
+  "total": "34.89"
+ },
+ "order": null,
+ "summary": "2 lines in the cart for $34.89 of the $270.00 available. Not bought: Diapers.",
+ "submitted": true,
+ "authorisedAt": "2026-10-02T04:04:51.535Z",
+ "summarySource": "system",
+ "committedCents": 3489
+}

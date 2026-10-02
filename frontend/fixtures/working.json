@@ -1,0 +1,189 @@
+{
+ "id": "rfixtureworking",
+ "reference": "LA-0902",
+ "request": "A family of four lost nearly everything in the Eaton fire and has no paperwork to show FEMA. They need N95 masks for clearing ash from the house, two twin sheet sets for the children, infant formula powder (two cans), size 4 diapers, a phone charger with a cable, and a replacement albuterol rescue inhaler for the father.",
+ "mode": "buy",
+ "capCents": 77000,
+ "reserveCents": 7700,
+ "spendableCents": 69300,
+ "delivery": {
+  "line1": "Example Relief Office, 100 Example Way",
+  "city": "Pasadena",
+  "state": "CA",
+  "postal": "91101"
+ },
+ "instructions": "",
+ "allergies": "None known",
+ "status": "WORKING",
+ "createdAt": "2026-10-02T04:04:21.480Z",
+ "updatedAt": "2026-10-02T04:04:43.801Z",
+ "needs": [
+  {
+   "id": "respirator",
+   "label": "N95 respirators",
+   "qty": 1,
+   "notes": "",
+   "status": "declined",
+   "reason": "No search result passed the checks for wording, stock and seller.",
+   "nextStep": "Try a more specific description, or buy this item another way."
+  },
+  {
+   "id": "sheets",
+   "label": "Bed sheet set",
+   "qty": 2,
+   "notes": "",
+   "status": "filled",
+   "reason": "",
+   "nextStep": ""
+  },
+  {
+   "id": "formula",
+   "label": "Infant formula",
+   "qty": 1,
+   "notes": "",
+   "status": "filled",
+   "reason": "",
+   "nextStep": ""
+  },
+  {
+   "id": "diapers",
+   "label": "Diapers",
+   "qty": 4,
+   "notes": "",
+   "status": "open",
+   "reason": "",
+   "nextStep": ""
+  },
+  {
+   "id": "charger",
+   "label": "Phone charger and cable",
+   "qty": 1,
+   "notes": "",
+   "status": "open",
+   "reason": "",
+   "nextStep": ""
+  },
+  {
+   "id": "rx",
+   "label": "Prescription medicine",
+   "qty": 1,
+   "notes": "",
+   "status": "open",
+   "reason": "",
+   "nextStep": ""
+  }
+ ],
+ "lines": [
+  {
+   "id": "L1-e83",
+   "needId": "sheets",
+   "productId": "ZWQa9cU",
+   "variantId": "ZWQa9cU@ashleyfurniture.com",
+   "name": "Premium Ultra Soft Twin Sheet Set",
+   "brand": "Linon",
+   "domain": "ashleyfurniture.com",
+   "qty": 2,
+   "unitCents": 3799,
+   "lineCents": 7598,
+   "image": "https://cdn.trychannel3.com/8f943b90-2d17-48ba-b510-a798bed166ee?aid=01M3XCHY45X16VC27K0XAEBWTQ&mid=vyVK",
+   "alt": "Stack of three navy blue twin sheets",
+   "url": "https://buy.trychannel3.com/ZWQa9cU-vyVK-S666bu?o=01KBPCENY8S7JT21N9DNKHMTR6&aid=01M3XCHY45X16VC27K0XAEBWTQ",
+   "why": "Cheapest result that mentions the required wording (rule-based mode).",
+   "substitution": null,
+   "requirements": [
+    "sheet",
+    "twin"
+   ]
+  },
+  {
+   "id": "L2-egm",
+   "needId": "formula",
+   "productId": "jfwkPsT",
+   "variantId": "jfwkPsT@iherb.com",
+   "name": "Cocoa Butter Formula with Vitamin E Baby Oil",
+   "brand": "Palmer's",
+   "domain": "iherb.com",
+   "qty": 1,
+   "unitCents": 850,
+   "lineCents": 850,
+   "image": "https://cdn.trychannel3.com/5fe77e14-75c8-498e-b349-7e7c844d6cce?aid=01M3XCJ1WHBW02EMX4DGJY68MR&mid=zcep",
+   "alt": "Palmer's Baby Cocoa Butter Formula with Vitamin E Cocoa Butter Baby Oil bottle.",
+   "url": "https://buy.trychannel3.com/jfwkPsT-zcep-S666bu?o=01KBPD95PMQGCTRZF7AQBFKJAD&aid=01M3XCJ1WHBW02EMX4DGJY68MR",
+   "why": "Cheapest result that mentions the required wording (rule-based mode).",
+   "substitution": null,
+   "requirements": [
+    "formula"
+   ]
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-10-02T04:04:21.490Z",
+   "kind": "queued",
+   "text": "Request received for household LA-0417. Budget $770.00, $77.00 held back."
+  },
+  {
+   "t": "2026-10-02T04:04:21.491Z",
+   "kind": "model",
+   "text": "Language model unavailable (ThrottlingException) after 0 turns. Finishing with fixed rules."
+  },
+  {
+   "t": "2026-10-02T04:04:21.491Z",
+   "kind": "need",
+   "text": "Rule-based mode recognised 6 items in the request."
+  },
+  {
+   "t": "2026-10-02T04:04:26.608Z",
+   "kind": "search",
+   "text": "Searched Channel3 for \"NIOSH approved N95 respirator mask pack\": 8 results, 0 usable.",
+   "needId": "respirator"
+  },
+  {
+   "t": "2026-10-02T04:04:26.608Z",
+   "kind": "decline",
+   "text": "Declined \"N95 respirators\": No search result passed the checks for wording, stock and seller.",
+   "needId": "respirator"
+  },
+  {
+   "t": "2026-10-02T04:04:29.785Z",
+   "kind": "search",
+   "text": "Searched Channel3 for \"twin size bed sheet set twin\": 8 results, 6 usable.",
+   "needId": "sheets"
+  },
+  {
+   "t": "2026-10-02T04:04:30.138Z",
+   "kind": "cart",
+   "text": "Added 2 x Premium Ultra Soft Twin Sheet Set from ashleyfurniture.com at $37.99 each ($75.98). $617.02 left.",
+   "needId": "sheets",
+   "lineId": "L1-e83"
+  },
+  {
+   "t": "2026-10-02T04:04:33.638Z",
+   "kind": "search",
+   "text": "Searched Channel3 for \"infant formula powder\": 8 results, 2 usable.",
+   "needId": "formula"
+  },
+  {
+   "t": "2026-10-02T04:04:33.967Z",
+   "kind": "cart",
+   "text": "Added 1 x Cocoa Butter Formula with Vitamin E Baby Oil from iherb.com at $8.50 each ($8.50). $608.52 left.",
+   "needId": "formula",
+   "lineId": "L2-egm"
+  }
+ ],
+ "model": {
+  "source": "rules",
+  "turns": 0,
+  "notes": [
+   "The language model became unavailable after 0 turns (ThrottlingException). The system finished the request with fixed rules."
+  ],
+  "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+ },
+ "cart": null,
+ "order": null,
+ "summary": "",
+ "submitted": false,
+ "authorisedAt": "2026-10-02T04:04:21.480Z",
+ "summarySource": "system",
+ "committedCents": 10447
+}

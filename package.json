@@ -1,0 +1,20 @@
+{
+  "name": "errand",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/unit.test.mjs",
+    "test:sandbox": "node --test tests/sandbox.test.mjs",
+    "test:e2e": "node --dns-result-order=ipv4first tests/e2e.deployed.mjs",
+    "contrast": "node scripts/contrast.mjs"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.700.0",
+    "@aws-sdk/client-dynamodb": "^3.700.0",
+    "@aws-sdk/client-lambda": "^3.700.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "playwright-core": "^1.50.0"
+  }
+}
