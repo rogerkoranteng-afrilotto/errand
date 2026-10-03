@@ -120,7 +120,7 @@ export default function Request() {
   return (
     <>
       <div className="page-head">
-        <h1>An agent that will refuse to spend the money.</h1>
+        <h1>It buys what a household needs, and refuses what it shouldn’t.</h1>
         <p>Describe what a household needs in plain words. The agent searches real products and buys within the budget. Where nothing meets a need, or an allergy is unanswered, it buys nothing for that item and says why. Try the baby-supplies example to watch it stop.</p>
       </div>
 

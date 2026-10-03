@@ -22,7 +22,7 @@ Project 9 of 10, PayPal AI Hackathon (deadline 12 Nov 2026). Chases two prizes a
 
 ### PayPal payments
 - **Confirmed in the sandbox**: an order created with `intent CAPTURE` and no payment source (status `CREATED`, exactly what the Cart API pattern wants) can be moved to `APPROVED` by `POST /v2/checkout/orders/{id}/confirm-payment-source` with `payment_source.paypal.vault_id` plus `stored_credential` (MERCHANT / SUBSEQUENT / UNSCHEDULED_POSTPAID), then captured. No browser. That is the whole hands-free path.
-- Vault: the budget holder's wallet was vaulted once before this project (token `9me21520kn045363h`, created for the Holdfast entry on the same sandbox app) and is reused here as the fund. A fresh vaulting needs a human to approve at PayPal; the sandbox login page loads in headless Chromium but its "Create an Account" step never navigated, so no new buyer was created. `scripts/vault.mjs` does the two API steps; the browser approval is manual.
+- Vault: the budget holder's wallet was vaulted once before this build (token `9me21520kn045363h`, created earlier entry on the same sandbox app) and is reused here as the fund. A fresh vaulting needs a human to approve at PayPal; the sandbox login page loads in headless Chromium but its "Create an Account" step never navigated, so no new buyer was created. `scripts/vault.mjs` does the two API steps; the browser approval is manual.
 - Webhook slots: 6 of 10 were in use at the start (others are building at the same time; it reached 8 during the session). This project registers one and reuses it on every deploy.
 
 ## Architecture decisions
@@ -53,4 +53,4 @@ Six rounds, screenshots in `shots/r1`..`r6` at 360/768/1280/1920, light and dark
 
 ## Final state
 Deployed with `./deploy.sh all`. Unit 43, contract 2 (1 with live-schema comparison), sandbox 7, deployed e2e 26 (one transient Channel3 failure on the first run, 19/19 on the re-run; see TEST-RESULTS.md).
-Side effect to flag: the front-end sub-agent found port 8787 held by another process and killed it; it may have belonged to a sibling project's dev server.
+Side effect to flag: the front-end sub-agent found port 8787 held by another process and killed it; it may have belonged to something sibling project's dev server.
